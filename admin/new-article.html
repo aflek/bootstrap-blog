@@ -9,8 +9,12 @@
 
     <!-- Bootstrap -->
     <link href="../vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-    <!--https://harvesthq.github.io/chosen/-->
+    <!--https://harvesthq.github.io/chosen/ - мультиселект для тегов-->
     <link href="../vendor/chosen_v1.8.2/chosen.min.css" rel="stylesheet">
+    <!--https://summernote.org/ - редактор-->
+    <link href="../vendor/summernote-master/dist/summernote.css" rel="stylesheet">
+
+
     <!-- Custom styles-->
     <link href="css/default.css" type="text/css" rel="stylesheet">
     <link href="css/new-article.css" type="text/css" rel="stylesheet">
@@ -151,7 +155,7 @@
                             </div>
                             <div class="form-group">
                                 <label class="sr-only">Article</label>
-                                <textarea class="form-control" placeholder="Article" name="article"></textarea>
+                                <textarea class="form-control summernote" placeholder="Article" name="article"></textarea>
                             </div>
 
                             <div class="checkbox">
@@ -183,8 +187,16 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="../vendor/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<!--font awesome-->
+<script src="../vendor/font-awesome-4.7.0/css/font-awesome.min.css"></script>
+<!--https://harvesthq.github.io/chosen/ - мультиселект для тегов-->
 <script src="../vendor/chosen_v1.8.2/chosen.jquery.min.js"></script>
+<!--https://summernote.org/ - редактор-->
+<script src="../vendor/summernote-master/dist/summernote.min.js"></script>
+
 <script src="js/default.js"></script>
+
+<!--мультиселект для тегов-->
 <script type="text/javascript">
     var config = {
         '.chosen-select' : {},
@@ -196,6 +208,13 @@
     for (var selector in config) {
       $(selector).chosen(config[selector]);
     }
+</script>
+
+<!--редактор статьи-->
+<script type="text/javascript">
+    $('.summernote').summernote({
+        height: 200
+    });
 </script>
 </body>
 </html>

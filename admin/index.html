@@ -10,6 +10,7 @@
     <!-- Bootstrap -->
     <link href="../vendor/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/default.css" type="text/css" rel="stylesheet">
+    <link href="css/index.css" type="text/css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -135,10 +136,12 @@
                                 </header>
                                 <table class="table table-striped">
                                     <thead>
-                                        <th>title</th>
-                                        <th>replies</th>
-                                        <th>date</th>
-                                        <th>actions</th>
+                                        <tr>
+                                            <th>title</th>
+                                            <th>replies</th>
+                                            <th>date</th>
+                                            <th>actions</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
@@ -184,20 +187,102 @@
 
                                     </tbody>
                                 </table>
-
-                                <a href="#" class="pull-right text-link">view all articles</a>
+                                <div class="clearfix">
+                                    <a href="#" class="pull-right text-link">view all articles</a>
+                                </div>
 
                             </div>
                         </div><!--Левая панель-->
+
                         <!--Правая панель-->
                         <div class="col-md-6 dashboard-right-cell">
-
+                            <div class="admin-content-con">
+                                <header>
+                                    <h5>Comments</h5>
+                                </header>
+                                <div class="comment-head-dash clearfix">
+                                    <div class="commenter-name-dash pull-left">Semenov Sergey</div>
+                                    <div class="days-dash pull-right">2 days ago</div>
+                                </div>
+                                <p class="comment-dash">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                                <small class="comment-date-dash">Today 5:10pm 24/12/2017</small>
+                                <hr>
+                                <div class="comment-head-dash clearfix">
+                                    <div class="commenter-name-dash pull-left">Semenov Sergey</div>
+                                    <div class="days-dash pull-right">2 days ago</div>
+                                </div>
+                                <p class="comment-dash">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                </p>
+                                <small class="comment-date-dash">Today 5:10pm 24/12/2017</small>
+                                <hr>
+                                <div class="clearfix">
+                                    <a href="#" class="pull-right text-link">view all comments</a>
+                                </div>
+                            </div>
                         </div><!--Правая панель-->
+
                     </div><!--Верхняя панель-->
+
                     <!--Нижняя панель-->
                     <div class="row">
-
+                        <div class="col-md-12">
+                            <div class="admin-content-con clearfix">
+                                <header>
+                                    <h5>Commenters</h5>
+                                </header>
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Full Name</th>
+                                            <th>Email</th>
+                                            <th>Status</th>
+                                            <th>Created</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Semenov Ivan</td>
+                                            <td>i.semenov@gmail.com</td>
+                                            <td><a href="#" class="label label-default">panding</a></td>
+                                            <td>Today 5:60pm - 14/09/2017</td>
+                                            <td><a href="#" class="label label-danger">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Semenov Ivan</td>
+                                            <td>i.semenov@gmail.com</td>
+                                            <td><a href="#" class="label label-success">active</a></td>
+                                            <td>Today 5:60pm - 14/09/2017</td>
+                                            <td><a href="#" class="label label-danger">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Semenov Ivan</td>
+                                            <td>i.semenov@gmail.com</td>
+                                            <td><a href="#" class="label label-success">active</a></td>
+                                            <td>Today 5:60pm - 14/09/2017</td>
+                                            <td><a href="#" class="label label-danger">Delete</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Semenov Ivan</td>
+                                            <td>i.semenov@gmail.com</td>
+                                            <td><a href="#" class="label label-success">active</a></td>
+                                            <td>Today 5:60pm - 14/09/2017</td>
+                                            <td><a href="#" class="label label-danger">Delete</a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div><!--Нижняя панель-->
+
                 </div>
 
                 <div class="row">
